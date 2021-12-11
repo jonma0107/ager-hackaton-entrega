@@ -1,0 +1,22 @@
+<nav class="row">
+    <div class="col-3" id="containerLogo">
+        <a href="productos"><img src="../../assets/logos/logoH.png" alt="Logo.png" id="logo"></a>
+    </div>
+    <div class="col-5" id="containerNavBar" >
+        <ul class="nav nav-tabs" id="navId">
+            <li mat-button>
+                <a href="productos" class="nav-link text-nav">Productos</a>
+            </li>
+            <li mat-button>
+                <a href="cliente/favoritos" class="nav-link  text-nav">Favoritos</a>
+            </li>
+            <li mat-button>
+                <a href="cliente/historialCompras" class="nav-link text-nav">Historial de compras</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-3" id="containerBtn">
+        <button id="btnLogIn" mat-button (click)="irUserPage()">{{usuario}}<i id="btnIcon" class="bi bi-person-circle"></i></button>
+    </div>
+    <div class="col-1" id="containerbtnLogOut"><button id="btnLogOut" mat-button (click)="logOut()"><i class="bi bi-lock-fill"></i></button></div>
+</nav>
