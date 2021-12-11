@@ -1,0 +1,1 @@
+web: gunicorn ager_finca.wsgi
